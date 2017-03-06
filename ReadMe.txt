@@ -82,3 +82,6 @@ Coding - Algorithm:
                //-|--------------------------------------------------
                //-| 5. Display Average_Pay as: AVERAGE PAY = $ xxxxxx
                //-|--------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+The program above was intended to be programmed through c++, however for the initial project I will make it a little more complicating by using HTML, CSS, Bootstap, JavaScript and Node.js 
