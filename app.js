@@ -1,30 +1,24 @@
+var http = require('http');
 var express = require('express');  // Function requiring the express module
 var bodyParser = require('body-parser'); // Requiring body-parser to read input from forms
-
-
-
-
+//var logic = require('./logic');
 var app = express();  // Setup express app
 
-// middleware used to parse post data.
-var urlencodedParser = app.use(bodyParser.urlencoded({ extended: false }));
+// Allow data to be parsed from input
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Loads the home screen index.html
-app.get('/', function(req, res){
-   res.sendFile(__dirname + '/index.html');
-   console.log("Home page requested");
+// Upload index file when home page is requested
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
 
 });
 
-// Function handling data sent after submit button is pressed
-app.post('/myaction',  function(req, res) {
-  console.log("The form has been submitted");
-  console.log(req.body);
-  return (true);
+app.post('/myaction', function(req, res) {
+  res.send('You sent the number "' + req.body.month1 + '"" Check your message to begin' +  '.');
+
+
 });
 
-
-
-// Server Setup and testing
-app.listen (8080);    // Listens to port 3000
-console.log("You are now listening to port: 8080");
+http.createServer(app).listen(1337, function () {
+    console.log("Express server listening on port 1337");
+});
