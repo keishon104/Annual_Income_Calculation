@@ -13,12 +13,15 @@ app.get('/', function(req, res) {
 
 });
 
+// function called once the submit button is pressed
 app.post('/myaction', function(req, res) {
   res.send('You sent the number "' + req.body.month1 + '"" Check your message to begin' +  '.');
 
 
 });
 
+
+// Creation of server and port listening 
 http.createServer(app).listen(1337, function () {
     console.log("Express server listening on port 1337");
 });
