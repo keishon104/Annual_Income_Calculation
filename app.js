@@ -1,4 +1,4 @@
-var http = require('http');
+var http = require('http'); // requiring http module 
 var express = require('express');  // Function requiring the express module
 var bodyParser = require('body-parser'); // Requiring body-parser to read input from forms
 //var logic = require('./logic');
@@ -16,12 +16,9 @@ app.get('/', function(req, res) {
 // function called once the submit button is pressed
 app.post('/myaction', function(req, res) {
   res.send('You sent the number "' + req.body.month1 + '"" Check your message to begin' +  '.');
-
-
 });
 
-
-// Creation of server and port listening 
+// Creation of server and port listening
 http.createServer(app).listen(1337, function () {
     console.log("Express server listening on port 1337");
 });

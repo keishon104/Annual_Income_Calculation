@@ -1,6 +1,6 @@
-This program was referenced from FAMU intro to computer programming course COP3014C. I intend on using these projects as a way to learn and demostrate my understanding using a particular language, algorithm, framework, etc. 
+This program was referenced from FAMU intro to computer programming course COP3014C. I intend on using these projects as a way to learn and demonstrate my understanding using a particular language, algorithm, framework, etc.
 
-Link to the actual project: http://www.cis.famu.edu/~cop3014cjoe/Homeworks/spring2017_PROG1_HowMuch12
+Link to the actual assignment: http://www.cis.famu.edu/~cop3014cjoe/Homeworks/spring2017_PROG1_HowMuch12
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -21,16 +21,16 @@ Description:     Read amount of 12 monthly paychecks.
              |              |
              +--------------+
 
-Preliminary:   Declare variables pay1, pay2,..., pay12, 
+Preliminary:   Declare variables pay1, pay2,..., pay12,
                and TotalPay and AveragePay.
 
 Algorithm:
                1. Read values for pay1, pay2, ... pay12.
                   NOTE: Ask for each check by month (capitialized), e.g.,
 
-                        ENTER check amount for JANUARY: 
+                        ENTER check amount for JANUARY:
 
-               2. Compute Total_Pay = pay1 + pay2 + ... 
+               2. Compute Total_Pay = pay1 + pay2 + ...
 
                3. Compute Average_Pay = Total_Pay / 12
 
@@ -45,9 +45,9 @@ Coding - Required lines (top):
            #include <iostream>
            using namespace std;
            int main()
-           {   
+           {
 
-Coding - Preliminary: 
+Coding - Preliminary:
 
                //---------------------------------------------
                // Declare all variables.
@@ -55,7 +55,7 @@ Coding - Preliminary:
                float pay1,      // First paycheck amount.
                      pay2,      // Second paycheck amount.
                      ...
-                     
+
 
 Coding - Algorithm:
 
@@ -67,21 +67,23 @@ Coding - Algorithm:
                //-|--------------------------------------------------
                //-| 2. Compute Total_Pay = pay1 + pay2 + ...pay12.
                //-|--------------------------------------------------
-               
+
 
                //-|--------------------------------------------------
                //-| 3. Compute Average_Pay = Total_Pay / 12.
                //-|--------------------------------------------------
-               
+
 
                //-|--------------------------------------------------
                //-| 4. Display Total_Pay as: TOTAL PAY = $ xxxxxx
                //-|--------------------------------------------------
-               
+
 
                //-|--------------------------------------------------
                //-| 5. Display Average_Pay as: AVERAGE PAY = $ xxxxxx
                //-|--------------------------------------------------
 
 -------------------------------------------------------------------------------------------
-The program above was intended to be programmed through c++, however for the initial project I will make it a little more complicating by using HTML, CSS, Bootstap, JavaScript and Node.js 
+
+The intent of the program was to refine and improve my skills as a MEAN full-stack developer. The technologies / frameworks / languages used includes HTML, CSS, JavaScript, Bootstrap, NodeJS, MongoDB, Mongoose, and ExpressJS.
+In the future I plan to revisit this program to have it interact with physical devices such as a Arduino or Rasberry Pi. For now these projects are strictly software related.
