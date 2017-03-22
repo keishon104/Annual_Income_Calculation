@@ -1,4 +1,4 @@
-# Program Exercise: Annual Income Calculation
+  # Program Exercise: Annual Income Calculation
 
 #### Project Description
 This is a project I created to refine my skills using full stack development (MEAN). In the future I plan on revisiting this project and integrating it with hardware such as Arduino and/or Raspberry Pi.  
@@ -13,7 +13,12 @@ The technologies I used in this project were:
     - HTML
     - CSS
     - JavaScript
-    
+
+Outcomes:
+
+    1. Read amount of 12 monthly paychecks.
+    2. Compute the total amount paid.
+    3. Compute the average monthly paycheck amount.
 ## Usage
 
 To use the program you must have MongoDB, nodeJS installed on your computer.
