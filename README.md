@@ -16,9 +16,10 @@ The technologies I used in this project were:
 
 Outcomes:
 
-    1. Read amount of 12 monthly paychecks.
+    1. Read name and amount of 12 monthly paychecks.
     2. Compute the total amount paid.
     3. Compute the average monthly paycheck amount.
+    4. Store name and results in database
 ## Usage
 
 To use the program you must have MongoDB, nodeJS installed on your computer.
