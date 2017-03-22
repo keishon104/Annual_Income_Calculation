@@ -13,8 +13,7 @@ The technologies I used in this project were:
     - HTML
     - CSS
     - JavaScript
-
-
+    
 ## Usage
 
 To use the program you must have MongoDB, nodeJS installed on your computer.
