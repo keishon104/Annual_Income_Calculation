@@ -14,7 +14,13 @@ app.get('/', function(req, res) {
 
 // function called once the submit button is pressed
 app.post('/myaction', function(req, res) {
-  res.send("Your data is being processed and will be sent back to you momentarily.");
+  new check ({
+    first: req.body.first,
+    last: req.body.last,
+    month1: req.body.month1
+  }).save(function(err, doc){
+  });
+  res.send("Your data was successfully sent to the database.");
 });
 
 // Creation of server and port listening
