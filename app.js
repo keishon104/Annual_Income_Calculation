@@ -1,7 +1,7 @@
 var http = require('http'); // requiring http module
 var express = require('express');  // Function requiring the express module
 var bodyParser = require('body-parser'); // Requiring body-parser to read input from forms
-//var logic = require('../models/check');
+var logic = require('./models/checks'); // imports the check models file
 var app = express();  // Setup express app
 
 // Allow data to be parsed from input
@@ -14,6 +14,7 @@ app.get('/', function(req, res) {
 
 // function called once the submit button is pressed
 app.post('/myaction', function(req, res) {
+  console.log(req.body);
   new check ({
     first: req.body.first,
     last: req.body.last,

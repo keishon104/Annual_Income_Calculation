@@ -4,7 +4,8 @@
   "description": "Calculate total income per month and average income ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+   "serve": "nodemon app.js"
   },
   "keywords": [
     "MEAN"
