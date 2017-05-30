@@ -1,7 +1,7 @@
 const http = require('http'); // requiring http module
 const express = require('express');  // Function requiring the express module
 const bodyParser = require('body-parser'); // Requiring body-parser to read input from forms
-const logic = require('./models/checks'); // imports the check models file
+const Check = require('./models/checks.js'); // imports the check models file
 const app = express();  // Setup express app
 const mongoose = require('mongoose');
 
@@ -13,6 +13,7 @@ mongoose.Promise = global.Promise;
 
 // Allow data to be parsed from input
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // Upload index file when home page is requested
 app.get('/', function(req, res) {
@@ -23,13 +24,27 @@ app.get('/', function(req, res) {
 // function called once the submit button is pressed
 app.post('/myaction', function(req, res) {
   console.log(req.body);
-var check = new check ({
-    first: req.body.first,
-    last: req.body.last,
-    month1: req.body.month1
-  }).save(function(err, doc){
-  });
-  res.send("Your data was successfully sent to the database.");
+
+var myData = new Check(req.body);
+
+myData.save()
+    .then(item => {
+      res.send("item saved to database");
+    })
+    .catch(err => {
+      res.status(400).send("Unable to save to database");
+    });
+    console.log("Data successfully saved to database");
+
+// Code below would not work
+  /*
+Check.create(req.body).then(function(Check){
+    res.send(post);
+});
+Check();
+*/
+
+
 });
 
 // Creation of server and port listening
