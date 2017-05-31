@@ -1,9 +1,9 @@
   # Program Exercise: Annual Income Calculation
 
 #### Project Description
-This is a project I created to refine my skills using full stack development (MEAN). In the future I plan on revisiting this project and integrating it with hardware such as Arduino and/or Raspberry Pi.  
+This is a project I created to refine my skills using full stack development (MEAN). The exer ise was modeled after homeworks from my Intro to Computer Programming using C++. In the future I plan on revisiting this project and integrating it with hardware such as Arduino and/or Raspberry Pi.  
 
-The technologies I used in this project were:  
+The technologies used in this project:  
     - Bootstrap
     - NodeJS
     - ExpressJS

@@ -1,26 +1,36 @@
-// Requiring libraries/ modules to Create database Schemas
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema;  // Stores Schema class
+
+
+module.exports = battery;
+
+var battery = "This is the checks Schema working";
 
 // Create Schema and Model
-
-const checkSchema = new Schema({
-  first: string,
-  last: string,
-  month1: number,
-  month2: number,
-  month3: number,
-  month4: number,
-  month5: number,
-  month6: number,
-  month7: number,
-  month8: number,
-  month9: number,
-  month10: number,
-  month11: number,
-  month12: number
+var CheckSchema = new Schema({
+  first: {
+    type: String,
+    required: [true, 'Name field is required']
+  },
+  last: {
+    type: String
+  },
+  month1: {
+    type: Number},
+  month2: Number,
+  month3: Number,
+  month4: Number,
+  month5: Number,
+  month6: Number,
+  month7: Number,
+  month8: Number,
+  month9: Number,
+  month10: Number,
+  month11: Number,
+  month12: Number, 
 });
 
-const check = mongoose.model('check',checkSchema);
+var Check = mongoose.model('Check', CheckSchema);
 
-module.exports = check;
+
+module.exports = Check;
