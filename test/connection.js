@@ -8,7 +8,7 @@ mongoose.Promose = global.Promise;
 before(function(done){
   mongoose.connect('mongodb://localhost/testing');
   mongoose.connection.once('open', function(){
-    console.log("connection has been made to the database and collections dropped. ");
+    console.log("connection has been made to the database and collections dropped.");
     done();
   }).on('error', function(error){
     console.log('connection error', error);
