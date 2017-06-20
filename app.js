@@ -46,7 +46,6 @@ myData.save()
       res.status(400).send("Unable to save to database");
     });
     console.log("Data successfully saved to database");
-
 });
 
 
