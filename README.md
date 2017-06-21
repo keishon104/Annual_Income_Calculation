@@ -1,7 +1,7 @@
   # Program Exercise: Annual Income Calculation
 
 #### Project Description
-This is a project I created to refine my skills using full stack development (MEAN). The exer ise was modeled after homeworks from my Intro to Computer Programming using C++. In the future I plan on revisiting this project and integrating it with hardware such as Arduino and/or Raspberry Pi.  
+This mini-project is a simple income calculator. Input your monthly income and returns your results. The following project is based off of a introduction to C++ programming from Florida A&M University. In addition to code test are made to verify communication with mongoDB server.
 
 The technologies used in this project:  
     - Bootstrap
@@ -13,6 +13,7 @@ The technologies used in this project:
     - HTML
     - CSS
     - JavaScript
+    - Nodemon
 
 Outcomes:
 

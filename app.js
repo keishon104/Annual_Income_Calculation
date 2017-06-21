@@ -34,7 +34,10 @@ app.get('/', function(req, res) {
 
 // function called once the submit button is pressed
 app.post('/myaction', function(req, res) {
-  console.log(req.body);
+  var data = req.body;
+  console.log(data);
+
+  module.exports = data;
 
 var myData = new Check(req.body);
 

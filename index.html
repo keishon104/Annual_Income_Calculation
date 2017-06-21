@@ -13,27 +13,36 @@
 </head>
 <body>
   <div class ="container-fluid">
-    <h1> Welcome to Program 1 </h1>
-    <h3> Please enter your data below to calculate your total and average paycheck </h3>
-    <form action="/myaction" method="post" onsubmit="return results();">
-    <p>First Name:<input type="text" name="first"></p>
-    <p>Last Name:<input type="text" name="last"></p>
-    <p>Month1:<input type="number" name="month1"></p>
-    <p>Month2:<input type="number" name="month2"></p>
-    <p>Month3:<input type="number" name="month3"></p>
-    <p>Month4:<input type="number" name="month4"></p>
-    <p>Month5:<input type="number" name="month5"></p>
-    <p>Month6:<input type="number" name="month6"></p>
-    <p>Month7:<input type="number" name="month7"></p>
-    <p>Month8:<input type="number" name="month8"></p>
-    <p>Month9:<input type="number" name="month9"></p>
-    <p>Month10:<input type="number" name="month10"></p>
-    <p>Month11:<input type="number" name="month11"></p>
-    <p>Month12:<input type="number" name="month12"></p>
+    <h1 class="text-center"> Annual Income Calculator </h1>
+    <h3 class="text-center"> The following program allows you to enter you monthly paychecks to then return your annual income. </h3>
+      <div class="row text-center">
+        <form action="/myaction" method="post" onsubmit="return results();">
+          <div class=".col-md-6 .col-xs-6">
+            <p>First Name: <input type="text" name="first"></p>
+            <p>Last Name: <input type="text" name="last"></p>
+            <p>January :  <input type="number" name="month1"></p>
+            <p>February:  <input type="number" name="month2"></p>
+            <p>March:  <input type="number" name="month3"></p>
+            <p>April:  <input type="number" name="month4"></p>
+          </div>
+          <div class=".col-md-6 .col-xs-6">
+            <p>May:  <input type="number" name="month5"></p>
+            <p>June:  <input type="number" name="month6"></p>
+            <p>July:  <input type="number" name="month7"></p>
+            <p>August:  <input type="number" name="month8"></p>
+            <p>September:  <input type="number" name="month9"></p>
+            <p>October: <input type="number" name="month10"></p>
+            <p>November: <input type="number" name="month11"></p>
+            <p>December: <input type="number" name="month12"></p>
+          </div>
+    <button type="submit" class= "btn btn-success btn-xl">Submit</button>
+      </form>
+    </div>
 
-    <button type="submit">Submit</button>
-    </form>
 
+<script lang="javascript">
+
+</script>
 
 
 <script>
