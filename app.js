@@ -20,7 +20,7 @@ mongoose.connection.once('open',function(){
   console.log("connection error", error);
 });
 
-// Data Parserer
+// Data Parserers
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 // Upload index file when home page is requested
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
-    console.log("The Home Page has been loaded");
+    console.log("Home Page loaded");
 });
 
 
