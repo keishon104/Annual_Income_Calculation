@@ -38,7 +38,9 @@ app.post('/myaction', function(req, res) {
   console.log(data);
 
   module.exports = data;
+  console.log(data);
 
+  
 var myData = new Check(req.body);
 
 myData.save()
